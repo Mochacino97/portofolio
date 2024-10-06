@@ -7,62 +7,56 @@
   list-style: none;
 }
 
-.containerluar{
+.containerluar {
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .header {
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 35px 12%;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 1000px;
+  padding: 35px 12px;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
-.containerdalam{
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-}
 
-.logo{
+.logo {
   font-size: 25px;
   color: white;
   font-weight: 600;
   transition: 0.3s ease;
 }
-.logo:hover{
+.logo:hover {
   color: orangered;
-  text-shadow: 0 0 25px orangered,
-  0 0 50px orangered;
-  transform; scale(1.1);
-
+  text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+  transform: scale(1.1);
 }
 
-span{color: orangered;}
+span {
+  color: orangered;
+}
 
-.navbar a{
+.navbar a {
   font-size: 18px;
   color: white;
   font-weight: 500;
   margin: 0 20px;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease;
-
 }
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
   color: orangered;
   border-bottom: 3px solid orangered;
 }
 
-.contact{
+.contact {
   padding: 10px 28px;
   background-color: white;
   color: black;
@@ -73,42 +67,43 @@ span{color: orangered;}
   font-weight: 600;
   transition: 0.3s ease;
 }
-.contact:hover{
+.contact:hover {
   background-color: orangered;
   box-shadow: 0 0 25px orangered;
   color: white;
 }
 
-.home{
+.home {
   width: 100%;
-  min-height: 100vh;
-  background-color: rgb(241, 241, 241);
+  height: 100vh;
+  background-color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 7em;
   padding: 70px 12% 0;
 }
 
-.home-content{
-  max-width: 800px;
+.home-content {
+  width: 1000px;
 }
-.home-content h3{
+.home-content h3 {
   font-size: 42px;
 }
-.home-content h1{
+.home-content h1 {
   font-size: 6;
   line-height: 1.2;
 }
-.home-content p{
+.home-content p {
   font-size: 18px;
   margin: 25px 0 30px;
 }
-.btn-box{
+.btn-box {
   width: 345px;
   display: flex;
   gap: 2em;
 }
-.btn-1{
+.btn-1 {
   padding: 15px 28px;
   background-color: black;
   color: white;
@@ -120,12 +115,12 @@ span{color: orangered;}
   transition: 0.3s ease;
   cursor: pointer;
 }
-.btn-1:hover{
+.btn-1:hover {
   background-color: white;
   color: black;
   border: 2px solid black;
 }
-.btn-2{
+.btn-2 {
   padding: 15px 28px;
   background-color: orangered;
   color: white;
@@ -137,11 +132,108 @@ span{color: orangered;}
   transition: 0.3s ease;
   cursor: pointer;
 }
-.btn-2:hover{
+.btn-2:hover {
   background-color: white;
   color: orangered;
 }
+.imgbox {
+  position: relative;
+}
+.imgbox img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 40% 10%;
+  border-radius: 20%;
+  box-shadow: 12px 14px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
+.containerdalam {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(39, 38, 38);
+}
+.experience1 {
+  font-size: 19px;
+  text-transform: capitalize;
+  color: orangered;
+}
+.imgbox1 {
+  position: relative;
+}
+.imgbox1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 40% 10%;
+  border-radius: 20%;
+  box-shadow: 12px 14px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.home1 {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7em;
+  padding: 70px 12% 0;
+}
 
-
-
+.home-content1 {
+  width: 1000px;
+}
+.home-content1 h3 {
+  font-size: 42px;
+}
+.home-content1 h1 {
+  font-size: 6;
+  line-height: 1.2;
+}
+.home-content1 p {
+  font-size: 18px;
+  margin: 25px 0 30px;
+}
+.imgbox2 {
+  position: relative;
+}
+.imgbox2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 40% 10%;
+  border-radius: 20%;
+  box-shadow: 12px 14px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact-form form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background-color: rgb(241, 241, 241);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  resize: none;
+}
